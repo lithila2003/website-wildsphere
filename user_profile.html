@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Vollkorn&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="user_profile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Wild Sphere</title>
+</head>
+<body id="body">
+
+    <!-- Section 1 -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html"><img src="./assests/logo1.jpg" alt="Wild Sphere Logo"></a> <!--logo -->
+        </div>
+        <ul>
+            <li class="#"><a href="./index.html">Home</a></li>
+            <li class="#"><a href="./gallery.html">Gallery</a></li>
+            <li class="#"><a href="./feedback.html">Feedback</a></li>
+            <li class="#"><a href="../Lithila/sitemap.html">Sitemap</a></li>
+            <li class="active"><a href="./user_profile.html">User Profile</a></li>
+            <li class="#"><a href="./team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="slider"  id="mainslider">
+        <div class="slides">
+            
+    <!--first step slide start-->
+    <div class="slide">
+        <div class="subslide">
+            <div style="display: flex;">
+                    <ul>
+                        <li class="steps" id="s1"><img src="assests/tick.png" width="40" alt="tick" class="tick"><span>Step 1</span>  ⮞</li> 
+                        <li class="steps">Step 2 ⮞</li> 
+                        <li class="steps">Step 3 </li>
+                    </ul>   
+            </div>
+            <div>
+                <div class="progress_bars">
+                    <div class="progress-container"><div id="progress-bar1"></div></div>
+                    <div class="progress-container"><div id="progress-bar2"></div></div>
+                    <div class="progress-container"><div id="progress-bar3"></div></div>
+                    <div class="progress-container"><div id="progress-bar4"></div></div>
+                    <div class="progress-container"><div id="progress-bar5"></div></div>
+                </div>
+                <p id = "stepintext">0 of 5 (0%)</p>
+                <form class="account-form" id ="step1form">
+                    <h1>Create an account</h1>
+
+                    <div style="display: flex;">
+                        <div class="form-group" style="margin-right: 40px;">
+                            <label for="firstName">First Name</label>
+                            <input class="tf" type="text" id="firstName" name="firstName" required autofocus>
+                        </div>
+
+                        <div class="form-group" style="margin-right: 15px;">
+                            <label for="lastName">Last Name</label>
+                            <input class="tf" type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="tf" type="email" id="email" name="email" placeholder="example.email@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div style="display: flex;">
+                            <label for="password">Password</label>
+                            <button onclick="showpassword()" type="button" style="margin-left: auto; background-color: rgba(217, 225, 214, 0); border: 0px; font-weight: bold; cursor: pointer;" id="eye1">Show</button>
+                        </div>
+                        <input class="tf" type="password" id="password" name="password" placeholder="Enter at least 8 characters" required minlength="8">
+                    </div>
+
+                    <div class="form-group">
+                        <div style="display: flex;">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <button onclick="showconfirmpassword()" type="button" style="margin-left: auto; background-color: rgba(217, 225, 214, 0); border: 0px; font-weight: bold; cursor: pointer;" id="eye2">Show</button>
+                        </div>
+                        <input class="tf" type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter at least 8 characters" required minlength="8">
+                    </div>
+
+                    <button id="con1" onclick="step1continue()" type="button">Continue</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!--second step slide start-->
+    <div class="slide">
+        <div class="subslide">
+            <div style="display: flex;">
+                    <ul>
+                        <li class="steps">Step 1 ⮞</li>
+                        <li class="steps" id="s2"><img src="assests/tick.png" width="40" alt="tick" class="tick"><span>Step 2</span> ⮞</li>
+                        <li class="steps">Step 3 </li>
+                    </ul>   
+            </div>
+            <div class="progress_bars">
+                <div class="progress-container"><div id="progress-bar6"></div></div>
+                <div class="progress-container"><div id="progress-bar7"></div></div>
+                <div class="progress-container"><div id="progress-bar8"></div></div>
+                <div class="progress-container"><div id="progress-bar9"></div></div>
+            </div>
+            <p id = "stepintext2">0 of 4 (0%)</p>
+            <div class="slider2">
+                <div class="slides2">
+                    <div class="slide2">
+                        <div class="qus_inputs">
+                            <label class="qus">What part of our mission do you care about most?</label><br><br>
+                            <input id="step2input1" class="step2inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="slide2">
+                        <div class="qus_inputs">
+                            <label class="qus">What skill can you offer to support our cause?</label><br><br>
+                            <input id="step2input2" class="step2inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="slide2">
+                        <div class="qus_inputs">
+                            <label class="qus">Are you interested in volunteering?</label><br><br>
+                            <input id="step2input3" class="step2inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="slide2">
+                        <div class="qus_inputs">
+                            <label class="qus">What types of activities dou you enjoy that could help our cause?</label><br><br>
+                            <input id="step2input4" class="step2inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; width: 100%">
+                <button onclick="changeSlide2(-1)" id="step2back">🡰 Back</button>
+                <button onclick="changeSlide2(1)" id="step2next">Skip</button>
+            </div>
+            <button onclick="changeSlide(-1)" id="tostep1">Back to previous step</button>
+        </div>
+    </div>
+
+    <!--third step slide start-->
+    <div class="slide">
+        <div class="subslide">
+            <div style="display: flex;">
+                    <ul>
+                        <li class="steps">Step 1 ⮞</li>
+                        <li class="steps">Step 2 ⮞</li>
+                        <li class="steps" id="s3"><img src="assests/tick.png" width="40" alt="tick" class="tick"><span>Step 3</span></li>
+                    </ul>   
+            </div>
+            <div class="progress_bars">
+                <div class="progress-container"><div id="progress-bar10"></div></div>
+                <div class="progress-container"><div id="progress-bar11"></div></div>
+                <div class="progress-container"><div id="progress-bar12"></div></div>
+                <div class="progress-container"><div id="progress-bar13"></div></div>
+            </div>
+            <p id = "stepintext3">0 of 4 (0%)</p>
+            <div class="slider3">
+                <div class="slides3">
+
+                    <div class="slide3">
+                        <div class="qus_inputs">
+                            <label class="qus">What eco-friendly products do you like?</label><br><br>
+                            <input id="step3input1" class="step3inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="qus_inputs">
+                            <label class="qus">What inspired you to join our mission?</label><br><br>
+                            <input id="step3input2" class="step3inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="qus_inputs">
+                            <label class="qus">How can we make our website or services better?</label><br><br>
+                            <input id="step3input3" class="step3inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="slide3">
+                        <div class="qus_inputs">
+                            <label class="qus">Would you like to regularly receive updates and news from us?</label><br><br>
+                            <input id="step3input4" class="step3inputs" placeholder="Input text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; width: 100%;">
+                <button onclick="changeSlide3(-1)" id="step3back">🡰 Back</button>
+                <button onclick="changeSlide3(1)" id="step3next">Skip</button>
+            </div>
+            <button onclick="changeSlide(-1)" id="tostep2">Back to previous step</button>
+        </div>
+    </div>
+
+    <!-- summary slide -->
+    <div class="slide">
+        <div class="subslide">
+            <h1 style="font-family: Poppins, sans-serif; color: #304D30; text-align: center;">Summary</h1>
+            <h3 style="margin-left: 3%;">Please review the entered information for accuracy. You may go back to make any necessary edits.</h3>
+            <p id="summarypara" style="margin-left: 5%; font-size: 15px; line-height: 30px; font-family: Poppins, sans-serif;"></p>
+            <button class="EOC" onclick="changeSlide(-1)">Go back and Edit</button>
+            <button class="EOC" id="confirm" onclick="confirm()">Confirm</button>
+        </div>
+    </div>
+    
+
+
+</div>
+</div>
+    <div class="msg_box_container">
+        <div class="msg_box">
+            <h1>Thank you for Joining Us</h1>
+            <p>Welcome to our community! We're thrilled to have you on board. Get ready to explore, connect, and enjoy everything our site has to offer. If you have any questions or need assistance, feel free to reach out to our support team.</p>
+            <p>Happy browsing!</p>
+            <p>Feel free to modify it to better fit your site's tone and branding.</p>
+            <span id="count_down"></span>
+        </div>
+    </div>
+
+    <div class="footer-dev" id="footer-dev">
+        Page developed by <a href="./editor3.html"> Uditha Vithanage </a>
+    </div>
+
+    <!-- /* template developed by "Footer" */ -->
+    <div class="footer">
+        Template developed by <a href="./editor1.html"> Induwara Arachchi </a>
+    </div>
+
+    <script src="user_profile.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

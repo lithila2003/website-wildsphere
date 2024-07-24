@@ -1,0 +1,54 @@
+/*Sitemap*/
+
+body {
+        background-image: url('./assests/sitemap-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 530;
+    color: #a0bca8;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.sitemap-container {
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 10px; 
+    padding: 2px; 
+    background-color: rgba(255, 255, 255, 0.336); 
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+.node {
+    fill: #20833d;
+    stroke: #333;
+    stroke-width: 1px;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.node:hover {
+    fill: #53df5f;
+}
+
+.node-text {
+    font-size: 12px;
+    fill: white;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+}
+
+line {
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+/* Sitemap - end*/

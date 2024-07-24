@@ -1,0 +1,377 @@
+/* Section 1 - start */
+
+.sec1 {
+    background: linear-gradient(rgba(4, 30, 4, 0.3), rgba(4,9,30,0.7)),url('./assests/background-main1.png');
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+.text-box {
+    text-align: center;
+    margin-top: 160px;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #E7F0DC;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #E7F0DC;
+    border: 1px solid #597445;
+    background: #597445;
+    padding: 12px 34px;
+    font-size: 17px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #729762;
+    background: #729762;
+    transition: 0.5s;
+}     
+
+.hero-btn:active {
+    transform: translateY(8px);
+}
+
+
+/* Section 1 - end */
+
+/* Section 2 - start */
+
+.sec2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.vm-head h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    font-family:poppins;
+    font-weight: 550;
+    color: #304D30;
+}
+
+.vm-head p{
+    text-align: center;
+    margin-top: 10px;
+    font-family:poppins;
+    color: #597445;
+    margin-bottom: 80px;
+}
+
+.vm-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.vm-card:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vm-card{
+    width: 450px;
+    height: 390px;
+    background-color: #eef0e583;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.vm-card-content{
+    padding: 30px 30px;
+    line-height: 1.3;
+}
+
+.vm-card-content h3{
+    font-size: 35px;
+    font-weight: 650;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #1e4d2bc2;
+}
+
+.vm-card-content p{
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #597445;
+    line-height: 2;
+}
+
+/* Section 2 - end */
+
+/* Section 3 - start */
+
+.sec3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 120px;
+}
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    border-radius: 30px;
+    width: 90%;
+    margin-left: 60px;
+    background-image: linear-gradient(rgba(4, 30, 4, 0.3), rgba(4,9,30,0.7)),url('./assests/quote-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.quote-content {
+    display: flex;
+    align-items: center;
+    height: 220px;
+    width: 1250px;
+    background: #eef0e51e;
+    border-radius: 30px;
+}
+
+.quote-content img {
+    border-radius: 30px 0px 0px 30px;
+    width: 240px;
+    height: 220px;
+    margin-right: 20px;
+}
+
+.quote-text {
+    color: #eef0e5c4;
+}
+
+.quote-text h3 {
+    text-align: left;
+    font-size: 60px;
+    font-weight: 450;
+    font-family: "Teko", sans-serif;
+}
+
+.quote-text p {
+    text-align: right;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Teko", sans-serif;
+}
+
+
+
+/* Section 3 - end */
+
+/* Section 4 - start */
+
+.sec4{ 
+    padding: 0;
+    box-sizing: border-box; 
+    border-radius: 0px 0px 30px 30px;  
+}
+
+.blogs h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    font-family:poppins;
+    font-weight: 550;
+    color: #304D30;
+}
+
+.blogs p{
+    text-align: center;
+    margin-top: 10px;
+    font-family:poppins;
+    color: #597445;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 60px;
+    margin-bottom: 75px;
+}
+
+.card{
+    width: 364px;
+    height: 400px;
+    background-color: #eef0e583;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content .c-title{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 0;
+    font-family:poppins;
+    color: #597445;
+    
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+
+.card-footer .read-time {
+    font-size: 14px;
+    color: #597445a1;
+    padding: 5px 10px;
+    background-color: #E7F0DC;
+    border-radius: 15px;
+}
+
+.card-footer .card-button{
+    display: inline-block;
+    background-color: #597445;
+    color: #E7F0DC;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.card-button:hover{
+    background-color: #729762;
+}
+
+.card-button:active {
+    transform: translateY(3px);
+}
+
+/* Section 4 - end */
+
+/* Section 5 - start */
+
+.sec5{
+    box-sizing: border-box;
+    font-family:poppins;
+    background-color: #E7F0DC;
+}
+
+.team h1{
+    text-align: center;
+    padding-top: 55px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    font-family:poppins;
+    font-weight: 550;
+    color: #304D30;
+}
+
+.team p{
+    text-align: center;
+    margin-top: 10px;
+    font-family:poppins;
+    color: #597445;
+}
+
+.team-section{
+    margin-top: 75px;
+}
+
+.team-cards{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+
+.team-card{
+    background-color: #5F7161;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    margin: 0 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.6s ease;
+    width:calc(33.33% - 20px);
+}
+
+.team-card:hover{
+    transform: translateY(-12px);
+}
+
+.team-image img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-detail h3{
+    color: #E7F0DC;
+    font-size: 20px;
+    margin: 15px 0;
+    font-family:poppins;
+    font-weight: 500;
+}
+
+.team-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.team-button {
+    background-color: #597445;
+    color: #E7F0DC;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-button:hover{
+    background-color: #729762;
+}
+
+.team-button:active {
+    transform: translateY(3px);
+}
+
+/* Section 5 - end */

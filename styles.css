@@ -1,0 +1,145 @@
+/* Section 1 - start */
+/* Template - start */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans', sans-serif;
+    background-color: #e7f0dc70;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 50px; 
+    margin: 20px 75px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 45px;
+    transition: 0.2s;
+}
+
+.navbar.sticky {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    width: calc(100% - 40px);
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar .logo {
+    
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo a {
+    display: inline-block;
+}
+
+.navbar .logo img {
+    height: 35px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #304D30;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    font-size: 17px;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background-color: #597445;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.navbar ul li a:hover {
+    color: #597445;
+}
+
+.navbar ul li a:hover::after {
+    opacity: 1;
+}
+
+.navbar ul .active a::after{
+    opacity: 1;
+}
+
+.navbar ul .active a{
+    font-weight: bolder;
+    color: #597445;
+}
+
+.footer-dev {
+    text-align: center;
+    padding: 8px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border: 1px solid #ccc;
+    margin-top: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    opacity: 80%;
+    height: 20px;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    transition: bottom 0.3s;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    margin-top: 0px;
+}
+
+.footer a {
+    color: #304d30de;
+}
+.footer-dev a {
+    color: #304d30de;
+}
+
+.back-to-top {
+    margin-left: 20px;
+    position: fixed;   
+    cursor: pointer;
+    transition: bottom 0.3s;
+    visibility: hidden; 
+}
+
+
